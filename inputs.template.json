@@ -1,0 +1,11 @@
+{
+  "PairedRnaSeqAndQuantWorkflow.r2_files": "Array[File]",
+  "PairedRnaSeqAndQuantWorkflow.output_zip_name": "String",
+  "PairedRnaSeqAndQuantWorkflow.git_commit_hash": "String",
+  "PairedRnaSeqAndQuantWorkflow.genome": "String",
+  "PairedRnaSeqAndQuantWorkflow.git_repo_url": "String",
+  "PairedRnaSeqAndQuantWorkflow.gtf": "File",
+  "PairedRnaSeqAndQuantWorkflow.r1_files": "Array[File]",
+  "PairedRnaSeqAndQuantWorkflow.star_index_path": "File"
+}
+
