@@ -40,7 +40,7 @@
 			}
 		},
 		{
-			"target":"PairedRnaSeqAndDgeWorkflow.output_zip_name",
+			"target":"PairedRnaSeqAndQuantWorkflow.output_zip_name",
 			"display_element": {
 				"type": "text",
 				"label": "Output zip-archive name:",
@@ -48,7 +48,7 @@
 			}
 		},
 		{
-			"target": "PairedRnaSeqAndDgeWorkflow.git_repo_url",
+			"target": "PairedRnaSeqAndQuantWorkflow.git_repo_url",
 			"display_element": {
 				"type": "dynamic_hidden",
 				"handler": "add_git_repo_url.py",
@@ -58,7 +58,7 @@
 			}
 		},
 		{
-			"target": "PairedRnaSeqAndDgeWorkflow.git_commit_hash",
+			"target": "PairedRnaSeqAndQuantWorkflow.git_commit_hash",
 			"display_element": {
 				"type": "dynamic_hidden",
 				"handler": "add_git_hash.py",
