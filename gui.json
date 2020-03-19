@@ -18,7 +18,7 @@
 			"target": {
 				"target_ids": ["PairedRnaSeqAndQuantWorkflow.genome", 
 					"PairedRnaSeqAndQuantWorkflow.star_index_path", 
-					"PairedRnaSeqAndQuantWorkflow.gtf",
+					"PairedRnaSeqAndQuantWorkflow.gtf"
 				],
 				"name": "genome_choice",
 				"handler": "genome_mapper.py"
