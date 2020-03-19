@@ -1,7 +1,7 @@
 workflow PairedRnaSeqAndQuantWorkflow {
     
     Array[File] r1_files
-    Array[File] r2_filess
+    Array[File] r2_files
     String genome
     File star_index_path
     File gtf
