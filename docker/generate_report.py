@@ -13,17 +13,12 @@ from jinja2 import Environment, FileSystemLoader
 # config variables
 TEMPLATE = 'template'
 OUTPUT = 'output'
-ANNOTATIONS = 'annotations_file'
-DESEQ_OUTPUT = 'deseq2_output_filename'
 CFG = 'config_vars'
 R1 = 'r1_files'
 R2 = 'r2_files'
 GIT_REPO = 'git_repo'
 GIT_COMMIT = 'git_commit'
 GENOME = 'genome'
-NC_FILE_SUFFIX = 'normalized_counts_file_suffix'
-VERSUS_SEP = 'versus_sep'
-ADJ_PVAL = 'adj_pval'
 
 
 class InputDisplay(object):
@@ -143,7 +138,6 @@ if __name__ == '__main__':
     context.update(arg_dict)
     context.update(j)
     
-    context[ANNOTATIONS] = os.path.basename(context[ANNOTATIONS])
     context.update({'file_display': file_display})
 
     # fill and write the completed report:

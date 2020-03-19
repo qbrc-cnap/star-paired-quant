@@ -13,7 +13,7 @@ task generate_report {
         echo "{" >> config.json
         echo '"genome": "${genome}",' >>config.json
         echo '"git_repo": "${git_repo_url}",' >>config.json
-        echo '"git_commit": "${git_commit_hash}",' >>config.json
+        echo '"git_commit": "${git_commit_hash}"}' >>config.json
 
         generate_report.py \
           -r1 ${sep=" " r1_files} \
