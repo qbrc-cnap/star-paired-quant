@@ -23,12 +23,12 @@ task picard_deduplicate {
     String output_bam_basename = basename(input_bam)
     String output_bam_name = sub(output_bam_basename, "\\.bam", ".duplicates_removed.bam")
 
-    Int disk_size = 300
+    Int disk_size = 500
 
     command {
         mkdir tmp
         export TMPDIR=$(pwd)/tmp
-        java -Xmx28g -jar $PICARD_JAR MarkDuplicates \
+        java -Xmx48g -jar $PICARD_JAR MarkDuplicates \
 	      INPUT=${input_bam} \
 	      OUTPUT="${output_bam_name}" \
 	      ASSUME_SORTED=TRUE \
@@ -46,7 +46,7 @@ task picard_deduplicate {
     runtime {
         docker: "docker.io/blawney/star_quant_only:v0.1"
         cpu: 8
-        memory: "32 G"
+        memory: "52 G"
         disks: "local-disk " + disk_size + " HDD"
         preemptible: 0
     }
